@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992337875167",
+    "project_id": "lazmiles-dd7c4",
+    "storage_bucket": "lazmiles-dd7c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992337875167:android:7743f0612230130697596a",
+        "android_client_info": {
+          "package_name": "com.example.lazmiles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNz0cEDk4vjb954Uxs1OyvdlWacSKifwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
