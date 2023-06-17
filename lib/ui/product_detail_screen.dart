@@ -3,8 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lazmiles/ui/loading_checkout.dart';
 
 import '../const/appcolor.dart';
+import 'checkout.dart';
 
 // ignore: must_be_immutable
 class ProductDetails extends StatefulWidget {
@@ -203,7 +205,31 @@ class _ProductDetailsState extends State<ProductDetails> {
                   child: ElevatedButton(
                     onPressed: () => addToCart(),
                     child: Text(
-                      "Add to cart",
+                      "Tambahkan ke Keranjang",
+                      style: TextStyle(color: Colors.white, fontSize: 18.sp),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: AppColor.deep_orange,
+                      elevation: 3,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                SizedBox(
+                  width: 1.sw,
+                  height: 56.h,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoadingChecOut(),
+                          ));
+                    },
+                    child: Text(
+                      "Beli Sekarang",
                       style: TextStyle(color: Colors.white, fontSize: 18.sp),
                     ),
                     style: ElevatedButton.styleFrom(
